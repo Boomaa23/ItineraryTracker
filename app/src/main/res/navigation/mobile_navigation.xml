@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.boomaa.itinerarytracker.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_maps"
+        android:name="com.boomaa.itinerarytracker.ui.maps.MapsFragment"
+        android:label="@string/menu_maps"
+        tools:layout="@layout/fragment_maps" />
+
+    <fragment
+        android:id="@+id/nav_saved_itin"
+        android:name="com.boomaa.itinerarytracker.ui.saved.SavedFragment"
+        android:label="@string/menu_saved_itin"
+        tools:layout="@layout/fragment_saved_itin" />
+
+    <fragment
+        android:id="@+id/nav_curr_itin"
+        android:name="com.boomaa.itinerarytracker.ui.current.CurrentFragment"
+        android:label="@string/menu_curr_itin"
+        tools:layout="@layout/fragment_curr_itin" />
+</navigation>
